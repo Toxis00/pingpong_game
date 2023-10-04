@@ -3,7 +3,7 @@ from pygame import *
 window_size = [700, 500]
 window = display.set_mode(window_size)
 display.set_caption('Пинг-понг')
-window.fill([240, 250, 235])
+window.fill([0, 125, 0])
 
 class GameSprite(sprite.Sprite): 
     def __init__(self, player_image ,x_size , y_size, x_cor, y_cor, speed_x, speed_y):
@@ -47,7 +47,7 @@ class Ball(GameSprite):
 
 rocket_l = Player('rocket.png', 40, 90, 5, 30, 0, 5)  
 rocket_r = Player('rocket.png', 40, 90, 655, 30, 0, 5)
-ball = Ball('301904415255211.png', 20, 20, 250, 300, 3, 4)
+ball = Ball('301904415255211.png', 100, 100, 250, 300, 3, 4)
 game = True
 FPS = 60
 clock = time.Clock()
@@ -62,7 +62,7 @@ while game:
     rocket_r.update_r()
     ball.update()
 
-    window.fill([240, 250, 235])
+    window.fill([0, 125, 0])
 
     rocket_l.reset()
     rocket_r.reset()
