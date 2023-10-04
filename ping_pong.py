@@ -47,7 +47,7 @@ class Ball(GameSprite):
 
 rocket_l = Player('rocket.png', 40, 90, 5, 30, 0, 5)  
 rocket_r = Player('rocket.png', 40, 90, 655, 30, 0, 5)
-ball = Ball('ball.png', 20, 20, 250, 300, 3, 4)
+ball = Ball('301904415255211.png', 20, 20, 250, 300, 3, 4)
 game = True
 FPS = 60
 clock = time.Clock()
